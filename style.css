@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(14, 14, 14);
+}
+
+/* En la clase nav1 definino que el logo y las opciones queden fijas al hacer scroll, color del fondo*/
+.nav1{
+    
+    position:fixed;
+    top: 1;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    padding: 10px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background-color: black;
+}
+
+/*En la clase nav2 defino al avatar con la similitud de la clase nav1*/
+.nav2{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:right;
+    padding: 10px;
+}
+
+/*Definimos el tamaño del logo*/
+.nav_logo{
+    width: 130px;
+    /*Centrar imagen*/
+    object-fit: contain;
+}
+
+/*Definimos el tamaño del avatar*/
+.nav_avatar{
+    width: 60px;
+    object-fit: contain;
+    background-position: left;
+}
+
+/*Definimos que el fondo sea una imagen, el color blanco en las letras y el tamaño*/
+.recomendada{
+    background-image: url(IMAGENES\ NETFLIX/terror13.jpg);
+    background-size:cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 800px;
+}
+
+/*Definimos el tamaño del campo donde estara el nombre de la pelicula y la descripcion*/
+.contenido{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+
+/*definimos el tamaño del titulo, el tamaño del campo*/
+.titulo-recomendado{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+/*Definimos el tamaño de la descripción, el tamaño del campo, la distacia al titulo*/
+.descripcion-recomendado{
+    width: 50rem;
+    line-height: 1.3;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    max-width: 600px;
+    height: 150px;
+}
+
+/*le damos estilo al boton*/
+.boton{
+    cursor: pointer;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/*al acercar el cursor al boton se oscurece */
+.boton:hover{
+    color: black;
+    background-color: grey;
+    transition: all 0.2s;
+}
+
+/*efecto entre la pelicula recomendada y las demas secciones*/
+.recomendado-secciones{
+    margin-top: 530px;
+    height: 9.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+/*definimos el color y tamaño del titulo 2*/
+.h2{
+    color: white;
+    margin-left: 20px;
+}
+
+/*tamaño de los campos donde se van a ubicar las caratulas con espacio entre ellas*/
+.caratulas{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: trasform 450ms;
+}
+
+/*posicion de las caratulas*/
+.tipo_pelicula{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+/*efecto para que al pasar el cursor la caratula crezca*/
+.caratulas:hover{
+    transform: scale(1.5);
+}
+
+/*ocultar el scrollbar*/
+.tipo_pelicula::-webkit-scrollbar{
+    display: none;
+}
+
+/*tamaño de las caratulas*/
+.tamaño_caratula{
+    max-block-size: 150px;
+}
+
+.tamaño_caratula:hover{
+    transform: scale(1.1);
+}
+
+/*quitar el punto al inicio*/
+li{
+    list-style: none;
+}
+
+/*ubicacion de los elementos de la lista*/
+ul{
+    display: flex;
+    gap: 16px;
+    align-items:center;
+}
+
+/*color de los elementos de la lista y ubicacion*/
+a{
+    color: white;
+    text-decoration: none;
+}
+
