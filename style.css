@@ -50,7 +50,7 @@ body{
 
 /*Definimos que el fondo sea una imagen, el color blanco en las letras y el tamaño*/
 .recomendada{
-    background-image: url(IMAGENES\ NETFLIX/terror13.jpg);
+    background-image: url(imagenes_netflix/terror13.jpg);
     background-size:cover;
     background-position: center center;
     color: white;
